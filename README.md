@@ -59,6 +59,8 @@ Click the **Fork** button at the top right of this page on GitHub. This creates 
 
 After forking, you should be on your own copy of the repo. The URL and the header will show your username, not the original owner's.
 
+Here is an example of what a forked repo should look like:
+
 ![example forked repo](./assets/example-forked-repo.png)
 
 ### Step 3 — Clone your fork
