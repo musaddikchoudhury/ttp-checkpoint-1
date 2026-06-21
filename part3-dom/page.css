@@ -7,7 +7,12 @@
   Define a class called .highlighted that changes both the
   background color and text color of any element it is applied to.
   JavaScript will add and remove this class — you just define what it looks like.
+}
 */
+.highlighted {
+  background-color: yellow;
+  color: black;
+}
 
 
 /*

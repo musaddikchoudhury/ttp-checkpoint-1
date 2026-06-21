@@ -22,6 +22,7 @@
       It must have a document type declaration, an html element,
       a head with a title tag, and a body.
 
+
   [ ] TASK 2 — Link the stylesheet
       Inside the head, link look.css to this page.
 
@@ -54,10 +55,56 @@
         Both rules target the same paragraph.
         Which color will the paragraph actually be? Why does one rule win?
 
-        Answer:
+        Answer: The color will be tomato because id selectors have higher specificity than element selectors.
 
 -->
 
 <!-- ============================================================ -->
 <!-- Write your complete HTML page starting below this line      -->
 <!-- ============================================================ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Checkpoint Page</title>
+
+  <link rel="stylesheet" href="look.css">
+
+  <!-- TASK 2 EXPLANATION:
+       The stylesheet goes in the head so styles load before the page displays, preventing unstyled content.
+  -->
+</head>
+
+<body>
+
+  <!-- TASK 3 -->
+
+  <h1>My Checkpoint Page</h1>
+
+  <p id="intro">
+    This is my intro paragraph. It contains at least two sentences.
+    It demonstrates how HTML elements work with IDs.
+  </p>
+
+  <h2 id="section-title">My Section Title</h2>
+
+  <ul>
+    <li class="highlight">Item 1</li>
+    <li>Item 2</li>
+    <li class="highlight">Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+  <!-- TASK 3 EXPLANATION:
+A class can be used on multiple elements. An id must be unique. Yes, multiple elements can share a class.
+ No, eleents cannot share the same id
+  -->
+
+  <div id="box">
+    This is a simple box container.
+  </div>
+
+  <button id="click-me">Click Me</button>
+
+</body>
+</html>
